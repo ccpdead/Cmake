@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.8.3)
+
+SET(LIBHELLO_SRC hello.c)
+
+ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})
+ADD_LIBRARY(hello_static STATIC ${LIBHELLO_SRC})
+
+SET_TARGET_PROPERTIES(hello_static PROPERTIES OUTPUT_NAME "hello")
+
