@@ -11,9 +11,11 @@ set(CMAKE_CXX_STANDARD 17)
 #是否指明c++版本-》是
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 ######################################################
+#通过find_package加载Qt插件
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
+# 编译成可执行文件的代码
 set(PROJECT_SOURCES
         cmd_button.cpp
         cmd_button.h
@@ -21,7 +23,7 @@ set(PROJECT_SOURCES
         main.cpp
 )
 ############################################################
-#REQUIRED的作用是当没有find，直接暂停
+# REQUIRED的作用是当没有find，直接暂停
 find_package(catkin REQUIRED
     COMPONENTS
     roscpp
@@ -29,8 +31,8 @@ find_package(catkin REQUIRED
     std_msgs
     )
     
-#find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-#find_package(Qt6 COMPONENTS Widgets REQUIRED)
+# find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+# find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 catkin_package(
 #  INCLUDE_DIRS include
@@ -39,16 +41,17 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
+# 通过include_directories加载头文件
 include_directories(
 include
 ${catkin_INCLUDE_DIRS}
 )
 
-#生成可执行文件
+# 生成可执行文件
  add_executable(testPackage_node 
                 ${PROJECT_SOURCES}
                 )
-
+# 链接动态链接库
 target_link_libraries (testPackage_node
                       ${catkin_LIBRARIES}
                       Qt${QT_VERSION_MAJOR}::Widgets

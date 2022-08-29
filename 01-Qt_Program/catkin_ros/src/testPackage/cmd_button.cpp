@@ -11,6 +11,7 @@ cmd_button::cmd_button(QWidget *parent,ros::NodeHandle& nh) :
   ui->line_speed->setMinimum(0.0);
   ui->line_speed->setMaximum(10.0);
   ui->line_speed->setValue(3.5);//设置默认参数
+
   ui->angle_speed->setMinimum(0.0);
   ui->angle_speed->setMaximum(5.0);
   ui->angle_speed->setValue(1.5);//设置默认参数
@@ -35,7 +36,7 @@ cmd_button::cmd_button(QWidget *parent,ros::NodeHandle& nh) :
 //    ++count;
 //  });
 
-  //绑定速度控制按钮
+  //￥绑定信号与槽
   connect(ui->top_left,&QPushButton::pressed,this,&cmd_button::slot_cmd_control);
   connect(ui->top,&QPushButton::clicked,this,&cmd_button::slot_cmd_control);
   connect(ui->top_right,&QPushButton::clicked,this,&cmd_button::slot_cmd_control);

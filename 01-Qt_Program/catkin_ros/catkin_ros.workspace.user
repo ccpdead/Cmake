@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.0, 2022-08-10T09:49:22. -->
+<!-- Written by QtCreator 8.0.0, 2022-08-29T09:26:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -143,7 +143,7 @@
      <value type="QString">ROS_PYTHON_VERSION=3</value>
      <value type="QString">ROS_ROOT=/opt/ros/noetic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
-     <value type="QString">SHLVL=292</value>
+     <value type="QString">SHLVL=386</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
@@ -329,15 +329,29 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/home/jhr/01-Qt_Program/catkin_ros/devel/lib/testPackage/testPackage_node</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/home/jhr/01-Qt_Program/catkin_ros/devel/lib/code02-msg/code02-msg_node</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">true</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">ROS Run Configuration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ROSProjectManager.ROSRunConfigurationThis is a test</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">This is a test</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>
  </data>
  <data>
@@ -384,21 +398,21 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">CMAKE_PREFIX_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel:/opt/ros/noetic</value>
-     <value type="QString">LD_LIBRARY_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu</value>
+     <value type="QString">CMAKE_PREFIX_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel:/home/jhr/catkin_ws/devel:/opt/ros/noetic</value>
+     <value type="QString">LD_LIBRARY_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel/lib:/home/jhr/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu</value>
      <value type="QString">PATH=/opt/ros/noetic/bin:/home/jhr/.local/bin:/home/jhr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin</value>
-     <value type="QString">PKG_CONFIG_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig</value>
+     <value type="QString">PKG_CONFIG_PATH=/home/jhr/01-Qt_Program/catkin_ros/devel/lib/pkgconfig:/home/jhr/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig</value>
      <value type="QString">PWD=/home/jhr/01-Qt_Program/catkin_ros</value>
-     <value type="QString">PYTHONPATH=/opt/ros/noetic/lib/python3/dist-packages</value>
-     <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/jhr/01-Qt_Program/catkin_ros/devel/share/common-lisp</value>
+     <value type="QString">PYTHONPATH=/home/jhr/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages</value>
+     <value type="QString">ROSLISP_PACKAGE_DIRECTORIES=/home/jhr/01-Qt_Program/catkin_ros/devel/share/common-lisp:/home/jhr/catkin_ws/devel/share/common-lisp</value>
      <value type="QString">ROS_DISTRO=noetic</value>
      <value type="QString">ROS_ETC_DIR=/opt/ros/noetic/etc/ros</value>
      <value type="QString">ROS_MASTER_URI=http://localhost:11311</value>
-     <value type="QString">ROS_PACKAGE_PATH=/home/jhr/01-Qt_Program/catkin_ros/src:/opt/ros/noetic/share</value>
+     <value type="QString">ROS_PACKAGE_PATH=/home/jhr/01-Qt_Program/catkin_ros/src:/home/jhr/catkin_ws/src:/opt/ros/noetic/share</value>
      <value type="QString">ROS_PYTHON_VERSION=3</value>
      <value type="QString">ROS_ROOT=/opt/ros/noetic/share/ros</value>
      <value type="QString">ROS_VERSION=1</value>
-     <value type="QString">SHLVL=62</value>
+     <value type="QString">SHLVL=66</value>
      <value type="QString">TERM=xterm</value>
      <value type="QString">_=/usr/bin/env</value>
     </valuelist>
@@ -584,7 +598,7 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/home/jhr/01-Qt_Program/catkin_ros/devel/lib/testPackage/testPackage_node</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/home/jhr/01-Qt_Program/catkin_ros/devel/lib/code02-msg/code02-msg_node</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
