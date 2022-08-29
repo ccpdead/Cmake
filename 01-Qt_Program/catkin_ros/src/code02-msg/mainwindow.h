@@ -32,6 +32,7 @@ void on_checkbox_use_environment_stateChanged(int state);
 
 void updateLoggingView();
 void updateLoggingView_sub();
+void pub_cmd();
 
 
 

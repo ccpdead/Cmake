@@ -39,10 +39,11 @@ class qnode : public QThread{
     //返回ros的info给QListsView
     QStringListModel* loggingModel_sub(){return &logging_model_sub;}
     void log_sub(const LogLevel& level,const std::string& msg);
+    void sent_cmd();
 
 
     void Callback(const std_msgs::StringConstPtr& submsg);
-    
+
   //$ 自定义信号
   Q_SIGNALS:
     void loggingUpdated();

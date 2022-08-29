@@ -191,4 +191,19 @@ void qnode::log_sub( const LogLevel &level, const std::string &msg) {
 }
 
 
+void qnode::sent_cmd()
+{
+  if(ros::ok())
+  {
+    std_msgs::String msg;
+    std::stringstream ss;
+    ss << "clicked the button";
+    msg.data = ss.str();
+    chatter_publisher.publish(msg);
+    log(Info, std::string("I sent:"+msg.data));
+    ros::spinOnce();
+  }
+}
+
+
 }//namespace

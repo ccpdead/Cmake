@@ -80,88 +80,6 @@
             <property name="spacing">
              <number>0</number>
             </property>
-            <item row="7" column="0">
-             <widget class="QCheckBox" name="checkbox_remember">
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
-              </property>
-              <property name="text">
-               <string>Remember settings on startup</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_4">
-              <property name="maximumSize">
-               <size>
-                <width>400</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Ros IP</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLineEdit" name="line_edit_host">
-              <property name="text">
-               <string>192.168.1.67</string>
-              </property>
-              <property name="placeholderText">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="0">
-             <widget class="QCheckBox" name="checkbox_use_environment">
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
-              </property>
-              <property name="text">
-               <string>Use environment variables</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_5">
-              <property name="maximumSize">
-               <size>
-                <width>400</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Ros Master Url</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLineEdit" name="line_edit_master">
-              <property name="text">
-               <string>http://192.168.1.2:11311/</string>
-              </property>
-              <property name="placeholderText">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_3">
-              <property name="maximumSize">
-               <size>
-                <width>400</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Ros Hostname</string>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="0">
-             <widget class="QLineEdit" name="line_edit_topic"/>
-            </item>
             <item row="8" column="0">
              <widget class="QWidget" name="widget" native="true">
               <property name="maximumSize">
@@ -204,6 +122,95 @@
                 </widget>
                </item>
               </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ros IP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QCheckBox" name="checkbox_remember">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Remember settings on startup</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ros Master Url</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="line_edit_master">
+              <property name="text">
+               <string>http://192.168.1.2:11311/</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLineEdit" name="line_edit_topic"/>
+            </item>
+            <item row="6" column="0">
+             <widget class="QCheckBox" name="checkbox_use_environment">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Use environment variables</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLineEdit" name="line_edit_host">
+              <property name="text">
+               <string>192.168.1.67</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="maximumSize">
+               <size>
+                <width>400</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ros Hostname</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QPushButton" name="sent_cmd">
+              <property name="text">
+               <string>Send</string>
+              </property>
              </widget>
             </item>
            </layout>

@@ -35,6 +35,9 @@ MainWindow::MainWindow(int argc, char**argv,QWidget *parent) :
   //当点击quit时，关闭窗口
   // connect(ui->button_quit,&QPushButton::clicked,this,&QWidget::close);
   connect(ui->button_quit,&QPushButton::clicked,this,&MainWindow::close);
+  
+  //$ 当按下发送按钮，触发 pub_cmd信号
+  QObject::connect(ui->sent_cmd,SIGNAL(clicked()),this, SLOT(pub_cmd()));
 }
 
 MainWindow::~MainWindow() {}
@@ -141,5 +144,11 @@ void MainWindow::closeEvent(QCloseEvent* event){
   QMainWindow::closeEvent(event);
 
 }
+
+void MainWindow::pub_cmd()
+{
+  QNODE.sent_cmd();
+}
+
 
 }//namespace
