@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.config": "editorconfig",
+        "random": "cpp",
+        "thread": "cpp"
+    },
+    "cmake.configureOnOpen": false,
+    "C_Cpp.errorSquiggles": "Disabled"
+}
