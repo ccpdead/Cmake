@@ -37,7 +37,7 @@ void pub_cmd();
 
 
 private:
-  Ui::MainWindow *ui;
+  Ui::MainWindow *ui = new Ui::MainWindow();
   //$ 实例化ros master配置
   qnode QNODE;
 };

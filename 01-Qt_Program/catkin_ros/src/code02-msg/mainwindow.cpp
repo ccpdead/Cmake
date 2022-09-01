@@ -40,7 +40,10 @@ MainWindow::MainWindow(int argc, char**argv,QWidget *parent) :
   QObject::connect(ui->sent_cmd,SIGNAL(clicked()),this, SLOT(pub_cmd()));
 }
 
-MainWindow::~MainWindow() {}
+MainWindow::~MainWindow() {
+  std::cout<<"析构函数"<<std::endl;
+  delete ui;
+}
 
 /**
  * @brief 若没有检测到master，则弹出警告栏 报错

@@ -7,7 +7,6 @@
 
 int main(int argc, char** argv)
 {
-  std::cout<<"hello world"<<std::endl;
   QApplication app(argc, argv);
   msg::MainWindow w(argc, argv);
   w.show();
