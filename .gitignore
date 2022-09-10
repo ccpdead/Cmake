@@ -1,0 +1,13 @@
+t1/build/
+t3/build/
+t4/build/
+*.vscode
+*.history
+*.qtc*
+*.catkin
+build*
+bin*
+devel*
+install*
+logs*
+
